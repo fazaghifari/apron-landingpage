@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Semarang Parkir</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/apron.png">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+</head>
+<body>
+ <div id="app">
+   <v-app light>
+    <v-toolbar class="white">
+      <img src="./assets/apron.png" style="width:40px; height:40px; margin-left:10px">
+      <v-toolbar-title style="margin:0px; padding-left:5px">
+        <a href="#/" style="color:black;text-decoration: none;">Semarang Integrated Parking System</a>
+      </v-toolbar-title>
+    </v-toolbar>
+    <v-content>
+      <section>
+        <v-parallax src="assets/semarang2.jpg" height="400">
+          <v-layout
+            column
+            align-center
+            justify-center
+            class="white--text"
+          >
+            <img src="assets/apron.png" alt="Vuetify.js" height="200">
+            <h1 class="text mb-2 display-1 text-xs-center" style="color:white">Semarang Integrated Parking System</h1>
+        
+          </v-layout>
+        </v-parallax>
+      </section>
+
+      <section>
+        <v-layout
+          column
+          wrap
+          class="my-5"
+          align-center
+        >
+          <v-flex xs12 sm4 class="my-3">
+            <div class="text-xs-center">
+              <h2 class="headline">The Best Way to Manage Your Parking System</h2>
+            </div>
+          </v-flex>
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+                <v-flex xs12 md4>
+                  <v-card color="cyan darken-2" class="white--text" href="http://sips.dazbor.com/#/login" style="width:300px">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="white--text text--lighten-2">dashboard</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">Dashboard V2.0</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Login to Semarang Integrated Parking System Dashboard. 
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card color="cyan darken-2" class="white--text" href="http://sips.dazbor.com/#/login" style="width:300px">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="white--text text--lighten-2">dashboard</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">Dashboard V1.0</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Login to Semarang Integrated Parking System Dashboard. 
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card color="cyan darken-2" class="white--text" href="https://dl.dropbox.com/s/ygi2nlzmv0foct8/Apron-release.apk" style="width:300px">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="white--text text--lighten-2">stay_primary_portrait</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline">SIPS App</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Login to Semarang Integrated Parking System App. 
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </section>
+    </v-content>
+  </v-app>
+ </div>
+
+ <script src="https://unpkg.com/vue/dist/vue.js"></script>
+ <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+ <script>
+   new Vue({
+    el: '#app',
+    data () {
+      return {
+        title: 'Your Logo'
+      }
+    }
+  })
+ </script>
+</body>
+</html>
